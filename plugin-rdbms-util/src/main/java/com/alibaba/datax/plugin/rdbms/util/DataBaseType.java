@@ -45,6 +45,8 @@ public enum DataBaseType {
         String suffix = null;
         switch (this) {
             case MySql:
+                result = jdbc;
+                break;
             case DRDS:
             case OceanBase:
                 suffix = "yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true";
